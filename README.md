@@ -30,3 +30,85 @@ graph TD
     D --> E[Answer Drafting Agent]
     E --> F[Response Generation (LangChain)]
     F --> G[Final Output to User]
+
+⚙️ Installation
+Clone the repository:
+
+git clone https://github.com/yourusername/neurofetch.git
+cd neurofetch
+
+
+
+
+Install required dependencies:
+
+
+pip install -r requirements.txt
+
+
+
+
+
+
+Add your Tavily API key to a .env file:
+
+
+TAVILY_API_KEY=your_api_key_here
+
+
+
+
+
+
+
+🧪 Usage
+To execute a sample research query:
+
+from agents.query import run_query
+
+run_query("What are the recent trends in sustainable energy innovation?")
+
+
+
+
+🧰 Technologies Used
+
+Technology	Description
+Python	Programming language
+Tavily	Web crawler for real-time data
+LangChain	LLM-based prompt chaining
+LangGraph	State-based workflow management
+
+
+🏛 Use Case Domains
+Academic Research and Literature Reviews
+
+Market Research and Competitive Intelligence
+
+Legal Reference Compilation
+
+Real-Time Customer Support Systems
+
+Policy and News Monitoring
+
+📌 Future Development Roadmap
+Addition of a Verification Agent for source credibility scoring
+
+Support for multilingual queries and translation
+
+Implementation of summary generation and citation formatting
+
+Integration with voice-based user interfaces for hands-free interaction
+
+🤝 Contributing Guidelines
+We welcome contributions and collaboration. Please fork the repository, create a feature branch, and submit a pull request. Ensure that all code contributions adhere to standard practices and include appropriate documentation.
+
+📄 License
+This project is licensed under the MIT License. See the LICENSE file for more information.
+
+📚 Acknowledgements
+Tavily – Web crawling API
+
+LangChain – Language model orchestration
+
+LangGraph – Agent coordination and state handling
